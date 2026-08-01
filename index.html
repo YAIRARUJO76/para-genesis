@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Para mi bb </title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+
+    <div class="stars"></div>
+
+    <main class="scene active" id="scene1">
+
+        <h1>Para Génesis ❤️</h1>
+
+        <p>
+            Hay historias que no se escriben con tinta...
+            se escriben con el corazón.
+        </p>
+
+        <button id="startBtn">
+            Comenzar nuestro viaje ✨
+        </button>
+
+    </main>
+
+    <section class="scene hidden" id="scene2">
+
+        <div class="moon"></div>
+
+        <h2 id="loveTitle"></h2>
+
+        <p id="loveText"></p>
+
+        <div class="photo-container">
+            <img src="assets/images/genesis.png" alt="Génesis">
+        </div>
+
+        <div class="particles"></div>
+
+    </section>
+
+    <section class="scene hidden" id="scene3">
+
+        <h2>Nuestros recuerdos ❤️</h2>
+
+        <p>
+            Cada momento contigo se convirtió en un tesoro.
+        </p>
+
+        <div class="gallery">
+
+            <div class="memory">
+                <img src="assets/images/recuerdo1.jpg" alt="">
+                <span>Un momento que guardo en mi corazón ❤️</span>
+            </div>
+
+            <div class="memory">
+                <img src="assets/images/recuerdo2.jpg" alt="">
+                <span>Gracias por cada sonrisa ✨</span>
+            </div>
+
+            <div class="memory">
+                <img src="assets/images/recuerdo3.jpg" alt="">
+                <span>Nuestra historia apenas comienza 🌹</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="scene hidden" id="scene4">
+
+        <h2>Nuestra historia ❤️</h2>
+
+        <div class="timeline">
+
+            <div class="moment">
+
+                <img src="assets/images/comienzo.jpg" alt="El comienzo">
+
+                <div class="moment-content">
+
+                    <div class="star">✨</div>
+
+                    <h3>El comienzo</h3>
+
+                    <p>
+                        El día que nuestras vidas se cruzaron.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="moment">
+
+                <img src="assets/images/conversacion.jpg" alt="Conversación">
+
+                <div class="moment-content">
+
+                    <div class="star">💫</div>
+
+                    <h3>Cada conversación</h3>
+
+                    <p>
+                        Poco a poco te convertiste en alguien especial.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="moment">
+
+                <img src="assets/images/nuestro-amor.jpg" alt="Nuestro amor">
+
+                <div class="moment-content">
+
+                    <div class="star">❤️</div>
+
+                    <h3>Nuestro amor</h3>
+
+                    <p>
+                        Sin darme cuenta, te convertiste en la persona que más alegraba mis días. Desde entonces, elegirte ha sido y seguirá siendo una de las mejores decisiones de mi vida.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="moment">
+
+                <img src="assets/images/distancia.png" alt="La distancia">
+
+                <div class="moment-content">
+
+                    <div class="star">🌎</div>
+
+                    <h3>La distancia</h3>
+
+                    <p>
+                        Aunque nos separen muchos kilómetros, nunca han sido suficientes para alejar nuestros corazones. Cada día que pasa me recuerda que todo este esfuerzo vale la pena por el futuro que sueño vivir contigo.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="next-section">
+
+            <h2>💌</h2>
+
+            <p>
+                Pero aún hay algo que quiero decirle...
+            </p>
+
+            <button id="goLetter">
+                Leer mi cartita ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+    <section class="scene hidden" id="scene5">
+
+        <h2>💌 Una carta solo para usted mi bb</h2>
+
+        <div class="envelope" id="envelope">
+
+            <div class="envelope-front"></div>
+
+            <div class="letter">
+
+                <h3>Para usted, mi bb peshosha ❤️</h3>
+
+                <p id="letterText"></p>
+
+            </div>
+
+        </div>
+
+        <button id="openLetter">
+            Abrir la carta ❤️
+        </button>
+        <button id="goCounter" style="display:none;">
+    Ver cuánto tiempo llevamos juntitos ❤️
+</button>
+
+    </section>
+    <section class="scene hidden" id="scene6">
+
+    <h2>⏳ Nuestro tiempo juntitos ❤️</h2>
+
+    <p>
+        Desde que nuestras vidas se unieron...
+    </p>
+
+    <div class="counter">
+
+        <div class="box">
+            <span id="days">0</span>
+            <small>Días</small>
+        </div>
+
+        <div class="box">
+            <span id="hours">0</span>
+            <small>Horas</small>
+        </div>
+
+        <div class="box">
+            <span id="minutes">0</span>
+            <small>Minutos</small>
+        </div>
+
+        <div class="box">
+            <span id="seconds">0</span>
+            <small>Segundos</small>
+        </div>
+
+    </div>
+
+    <button id="goSignature">
+        Continuar ❤️
+    </button>
+    
+
+</section>
+
+<section class="scene hidden" id="scene7">
+
+    <h2>❤️ Un último detalle...</h2>
+
+    <p>
+        Quiero que esta página tenga un pedacito de usted.
+        Firma aquí abajo.
+    </p>
+
+    <canvas id="signaturePad" width="700" height="260"></canvas>
+
+    <div class="signature-buttons">
+
+        <button id="clearSignature">
+            Limpiar
+        </button>
+
+        <button id="saveSignature">
+            Guardar mi firma ❤️
+        </button>
+
+    </div>
+
+    <div id="effects"></div>
+
+    <div id="finalMessage" class="hidden">
+
+    <h2>❤️ Gracias por firmar nuestra historia ❤️</h2>
+
+    <p>
+        El 26 de diciembre de 2025 comenzó una historia que jamás quiero terminar.
+        Gracias por hacerme tan feliz.
+        Te amo muchísimo, Génesis. 🌹
+    </p>
+
+</div>
+
+</section>
+
+<audio id="bgMusic" loop>
+    <source src="assets/audio/musica.mp3" type="audio/mpeg">
+</audio>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
