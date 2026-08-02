@@ -58,7 +58,7 @@ music.play().catch(console.error);
 
         cambiar(scene2, scene3);
 
-    }, 9000);
+    }, 20000);
 
     setTimeout(() => {
 
