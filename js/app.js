@@ -58,13 +58,13 @@ music.play().catch(console.error);
 
         cambiar(scene2, scene3);
 
-    }, 20000);
+    }, 9000);
 
     setTimeout(() => {
 
         cambiar(scene3, scene4);
 
-    }, 20000);
+    }, 40000);
 
 });
 
