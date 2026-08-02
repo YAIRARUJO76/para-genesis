@@ -76,6 +76,11 @@ function cambiar(actual, siguiente){
     siguiente.classList.remove("hidden");
     siguiente.classList.add("active");
 
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
 }
 
 function escribirTitulo(){
