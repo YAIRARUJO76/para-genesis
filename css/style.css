@@ -949,3 +949,30 @@ button:hover{
     }
 
 }
+@media (max-width:768px){
+
+    .gallery{
+
+        flex-direction:column;
+        align-items:center;
+        gap:25px;
+
+    }
+
+    .memory{
+
+        width:90%;
+        max-width:320px;
+
+        transform:none !important;
+        animation:none;
+
+    }
+
+    .memory img{
+
+        height:auto;
+
+    }
+
+}
