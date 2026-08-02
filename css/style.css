@@ -960,34 +960,32 @@ button:hover{
 @media (max-width:768px){
 
     .gallery{
-
-        display:flex;
-        flex-direction:row;
-        overflow-x:auto;
-        overflow-y:hidden;
-        gap:20px;
-        padding:20px;
-
-        scroll-snap-type:x mandatory;
-        -webkit-overflow-scrolling:touch;
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        gap: 20px;
+        width: 100%;
+        padding: 20px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
     }
 
     .gallery::-webkit-scrollbar{
-        display:none;
+        display: none;
     }
 
     .memory{
-
-        flex:0 0 260px;
-        width:260px;
-        scroll-snap-align:center;
-
-        transform:none !important;
-        animation:none;
+        flex: 0 0 85%;
+        max-width: 85%;
+        scroll-snap-align: center;
+        animation: none;
+        transform: none !important;
     }
 
     .memory img{
-        height:260px;
+        width: 100%;
+        height: auto;
     }
 
 }
